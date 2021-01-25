@@ -16,7 +16,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster() 
     {
-        //base.OnConnectedtoMaster();
+        //base.OnConnectedtoMaster(); check
         Debug.Log("Connected to Master");
         PhotonNetwork.JoinLobby();
     }
