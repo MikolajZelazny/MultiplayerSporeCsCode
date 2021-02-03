@@ -44,7 +44,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 }
     public override void OnJoinedRoom()
     {
-        //base.OnJoinedRoom();
+        MenuManager.Instance.OpenMenu("room");
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)

@@ -1976,6 +1976,7 @@ MonoBehaviour:
   menus:
   - {fileID: 1384440313}
   - {fileID: 348732424}
+  - {fileID: 927897533}
   - {fileID: 1650261826}
 --- !u!1 &1609615666
 GameObject:
@@ -2091,7 +2092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c6c3feebacd2eb4abc572182c8d104f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuName: create room
+  menuName: room
   open: 0
 --- !u!1 &1753867234
 GameObject:
