@@ -10,6 +10,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 {
 
     [SerializeField] TMP_InputField roomNameInputField;
+    [SerializeField] TMP_Text errorText;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +32,6 @@ public class Launcher : MonoBehaviourPunCallbacks
         Debug.Log("Joined Lobby");
 }
 
-
-// Update is called once per frame
     public void CreateRoom()
 {
         if (string.IsNullOrEmpty(roomNameInputField.text))
@@ -49,8 +48,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
-        //base.OnCreateRoomFailed(returnCode, message);
+        errorText.text = "Room Creation Failed: " + message;
+        MenuManager.Instance.OpenMenu("error");
     }
-
-
 }
