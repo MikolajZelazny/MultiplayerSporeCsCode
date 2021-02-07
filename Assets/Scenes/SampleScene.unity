@@ -270,7 +270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &348732423
 RectTransform:
   m_ObjectHideFlags: 0
@@ -339,10 +339,10 @@ RectTransform:
   m_Father: {fileID: 1609615667}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300, y: -115}
-  m_SizeDelta: {x: 600, y: 70}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &520569843
 MonoBehaviour:
@@ -386,7 +386,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 520569844}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1578824877}
+        m_MethodName: OpenMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 927897533}
+          m_ObjectArgumentAssemblyTypeName: Menu, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &520569844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1235,7 +1246,7 @@ GameObject:
   - component: {fileID: 1025812028}
   - component: {fileID: 1025812027}
   m_Layer: 5
-  m_Name: RoomNameText
+  m_Name: ErrorText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1253,7 +1264,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1443709012}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1279,7 +1290,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Error
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1388,7 +1399,7 @@ RectTransform:
   m_Children:
   - {fileID: 1608291980}
   m_Father: {fileID: 1443709012}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1520,10 +1531,10 @@ RectTransform:
   m_Father: {fileID: 1609615667}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300, y: -195}
-  m_SizeDelta: {x: 600, y: 70}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1190801689
 MonoBehaviour:
@@ -2004,7 +2015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1443709012
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2016,8 +2027,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1030904203}
   - {fileID: 1025812026}
+  - {fileID: 1030904203}
   m_Father: {fileID: 1578824876}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2074,10 +2085,10 @@ RectTransform:
   m_Father: {fileID: 1609615667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300, y: -35}
-  m_SizeDelta: {x: 600, y: 70}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526583776
 MonoBehaviour:
@@ -2192,8 +2203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eee6a88c53d9294fa3d5abe4ffd43a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomNameInputField: {fileID: 0}
-  errorText: {fileID: 0}
+  roomNameInputField: {fileID: 696913440}
+  errorText: {fileID: 1025812027}
 --- !u!114 &1578824873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,6 +2306,7 @@ MonoBehaviour:
   - {fileID: 348732424}
   - {fileID: 927897533}
   - {fileID: 1650261826}
+  - {fileID: 1443709013}
 --- !u!1 &1608291979
 GameObject:
   m_ObjectHideFlags: 0
